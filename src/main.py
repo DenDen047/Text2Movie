@@ -3,13 +3,16 @@ import sys
 import re
 import glob
 
-import cv2
-from PIL import Image
-import numpy as np
-
 
 def main():
-    print('hello')
+    # MarkDownファイルを読み込む
+    pass
+
+    # MDの構文を解析
+    pass
+
+    # 動画を生成
+    pass
 
 
 if __name__ == '__main__':
