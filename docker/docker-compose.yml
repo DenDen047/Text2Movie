@@ -5,13 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: mergeimage:latest
+    image: text2movie:latest
     volumes:
       - type: bind
         source: ../src
         target: /workdir
-      - type: bind
-        source: ${MI_DATA_PATH}
-        target: /data
+      # - type: bind
+      #   source: ${MI_DATA_PATH}
+      #   target: /data
     working_dir: /workdir
     command: python main.py
