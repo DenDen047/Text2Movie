@@ -6,7 +6,8 @@ import glob
 import cv2
 
 
-def read_markdown():
+def read_markdown(file_path):
+    # Markdown -> HTML -> BeautifulSoup
     return None
 
 
