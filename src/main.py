@@ -8,11 +8,13 @@ import cv2
 
 def read_markdown(file_path):
     # Markdown -> HTML -> BeautifulSoup
-    return None
+    soup = None
+    return soup
 
 
-def analysis_markdown(md_file):
-    return None
+def soup2source(soup):
+    source = None
+    return source
 
 
 def text_frame(text):
@@ -38,10 +40,10 @@ def generate_movie(source, width, height, result_path):
 
 def main():
     # MarkDownファイルを読み込む
-    md_file = read_markdown()
+    soup = read_markdown()
 
-    # MDの構文を解析
-    source = analysis_markdown(md_file)
+    # BeautifulSoupを用いて、HTMLを解析する
+    source = soup2source(soup)
 
     # 動画を生成
     result_path = 'output.m4v'
